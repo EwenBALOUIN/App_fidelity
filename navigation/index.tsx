@@ -16,7 +16,7 @@ import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabThreeScreen from '../screens/TabThreeScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
+import LoyaltyCardMainScreen from '../screens/LoyaltyCardMainScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -86,10 +86,10 @@ function BottomTabNavigator() {
         })}
       />
       <BottomTab.Screen
-        name="TabTwo"
-        component={TabTwoScreen}
+        name="LoyaltyCardMain"
+        component={LoyaltyCardMainScreen}
         options={{
-          title: 'Tab Two',
+          title: 'Loyalty card',
           tabBarIcon: ({ color }) => <TabBarIcon name="credit-card" color={color} />,
         }}
       />

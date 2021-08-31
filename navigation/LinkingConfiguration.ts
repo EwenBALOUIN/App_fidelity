@@ -20,9 +20,9 @@ const linking: LinkingOptions<RootStackParamList> = {
               TabOneScreen: 'one',
             },
           },
-          TabTwo: {
+          LoyaltyCardMain: {
             screens: {
-              TabTwoScreen: 'two',
+              LoyaltyCardMainScreen: 'loyalty card main',
             },
           },
           TabThree: {
