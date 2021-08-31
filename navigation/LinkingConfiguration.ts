@@ -15,9 +15,9 @@ const linking: LinkingOptions<RootStackParamList> = {
     screens: {
       Root: {
         screens: {
-          TabOne: {
+          CalendarMain: {
             screens: {
-              TabOneScreen: 'one',
+              CalendarMainScreen: 'calendar main',
             },
           },
           LoyaltyCardMain: {

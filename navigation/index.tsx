@@ -14,7 +14,7 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
-import TabOneScreen from '../screens/TabOneScreen';
+import CalendarMainScreen from '../screens/CalendarMainScreen';
 import UsersMainScreen from '../screens/UsersMainScreen';
 import LoyaltyCardMainScreen from '../screens/LoyaltyCardMainScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
@@ -59,15 +59,15 @@ function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="CalendarMain"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}>
       <BottomTab.Screen
-        name="TabOne"
-        component={TabOneScreen}
-        options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
-          title: 'Tab One',
+        name="CalendarMain"
+        component={CalendarMainScreen}
+        options={({ navigation }: RootTabScreenProps<'CalendarMain'>) => ({
+          title: 'CalendarMain',
           tabBarIcon: ({ color }) => <TabBarIcon name="calendar" color={color} />,
           headerRight: () => (
             <Pressable
