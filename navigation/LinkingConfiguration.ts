@@ -25,9 +25,9 @@ const linking: LinkingOptions<RootStackParamList> = {
               LoyaltyCardMainScreen: 'loyalty card main',
             },
           },
-          TabThree: {
+          UsersMain: {
             screens: {
-              TabThreeScreen: 'three',
+              UsersMainScreen: 'users main',
             },
           },
         },
